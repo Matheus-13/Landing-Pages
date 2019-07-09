@@ -67,23 +67,16 @@ nav.mobile {
     background-image: url(../img/icon_menu.png);
 }
 
-nav.mobile:hover ul {
-    visibility: visible;
-    opacity: 1;
-}
-
 nav.mobile ul {
-	visibility: hidden;
-	opacity: 0;
+    display: none;
+    z-index: 1;
     width: 100%;
     left: 0;
-    top: 77px;
+    top: 126px;
     border-bottom: 4px solid #EB2D2D;
-    z-index: 9;
     position: absolute;
     text-align: center;
-	background-color: white;
-	transition: 0.1s ease-in;
+    background-color: white;
 }
 
 nav.mobile ul li {
@@ -419,7 +412,7 @@ footer p {
     position: absolute;
     left: 0;
     top: 0;
-    width: 30%;
+    width: 0;
     height: 20px;
     border-radius: 20px;
     background: linear-gradient(to bottom,rgb(255,255,255),rgb(200,200,200));
@@ -429,7 +422,7 @@ footer p {
     width: 26px;
     height: 26px;
     position: absolute;
-    left: calc(30% - 13px);
+    left: 0;
     top: -4px;
     cursor: pointer;
     border-radius: 8px;
@@ -581,14 +574,9 @@ label .circle {
     width: 100%;
 }
 
-.nav-galeria-wraper {
-    width: 200%;
-}
-
 .mini-img-wraper {
     float: left;
     padding: 9px;
-    width: calc(33.3% * 0.5);
 }
 
 .mini-img {
