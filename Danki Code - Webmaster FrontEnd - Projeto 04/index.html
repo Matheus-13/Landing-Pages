@@ -7,7 +7,11 @@
 	<meta name="author" content="Matheus Ramalho de Oliveira" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="js/slick/slick.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+	<script src="js/jquery.js"></script>
+	<script src="js/slick/slick.js"></script>
+	<script src="js/script.js"></script>
 	<title>Projeto 04 by Matheus</title>
 </head>
 <body>
@@ -37,6 +41,7 @@
 
 <section id="mosaico">
 	<div class="container">
+		<div class="mosaico-container">
 		<div class="mosaico-box">
 			<div style="background-image: url('imgs/mosaico/5851511f33c2c.jpg');"></div>
 			<div style="background-image: url('imgs/mosaico/58514eb7ddb01.jpg');"></div>
@@ -66,7 +71,7 @@
 			<div style="background-image: url('imgs/mosaico/5842ffd367ecd.jpg');"></div>
 			<div style="background-image: url('imgs/mosaico/591b71494bf33.jpg');"></div>
 		</div><!--mosaico-box-->
-		<div class="clear"></div>
+		</div><!--mosaico-container-->
 	</div><!--container-->
 </section><!--mosaico-->
 
@@ -178,20 +183,39 @@
 				<p>Doença periodontal é o comprometimento dos tecidos que envolvem os dentes e que leva a inflamação do tecido gengival e/ou reabsorção do osso que está ao redor das raízes dos dentes. A consulta regular ao periodontista é fundamental para a saúde bucal.</p>
 			</div><!--tratamento-single-->
 		</div><!--tratamento-box-->
-		<div class="clear"></div>
 	</div><!--container-->
 </section><!--tratamentos-->
 
 <section id="depoimentos">
 	<h2>Depoimentos</h2>
 	<div class="container">
-		<quote>
-			“Estrutura e atendimento excepcionais! Adorei o atendimento da Dra. Fernanda, excelente profissional.”
-		</quote>
-		<div class="depoimento-box">
-			<img src="imgs/depoimento1.png" />
-			<span>Maria Augusta Santos</span>
-		</div><!--depoimento-box-->
+		<div class="depoimento-single">
+			<quote>
+				“Estrutura e atendimento excepcionais! Adorei o atendimento da Dra. Fernanda, excelente profissional.”
+			</quote>
+			<div class="depoimento-box">
+				<img src="imgs/depoimento1.png" />
+				<span>Maria Augusta Santos</span>
+			</div><!--depoimento-box-->
+		</div><!--depoimento-single-->
+		<div class="depoimento-single">
+			<quote>
+				“Estrutura e atendimento excepcionais! Adorei o atendimento da Dra. Fernanda, excelente profissional.”
+			</quote>
+			<div class="depoimento-box">
+				<img src="imgs/depoimento1.png" />
+				<span>Maria Augusta Santos</span>
+			</div><!--depoimento-box-->
+		</div><!--depoimento-single-->
+		<div class="depoimento-single">
+			<quote>
+				“Estrutura e atendimento excepcionais! Adorei o atendimento da Dra. Fernanda, excelente profissional.”
+			</quote>
+			<div class="depoimento-box">
+				<img src="imgs/depoimento1.png" />
+				<span>Maria Augusta Santos</span>
+			</div><!--depoimento-box-->
+		</div><!--depoimento-single-->
 	</div><!--container-->
 </section><!--depoimentos-->
 

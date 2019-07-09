@@ -60,22 +60,15 @@ nav.mobile {
     display: none;
 }
 
-nav.mobile:hover ul {
-    visibility: visible;
-    opacity: 1;
-}
-
 nav.mobile ul {
-    visibility: hidden;
-    opacity: 0;
-    z-index: 9;
+    display: none;
     text-align: center;
     width: 100%;
     position: absolute;
     left: 0;
     top: 60px;
     background-color: white;
-    transition: 0.4s ease-in;
+    z-index: 1;
 }
 
 nav.mobile ul li {
@@ -280,6 +273,7 @@ section#depoimentos > h2 {
 }
 
 .depoimento-box img {
+    display: inline-block;
     width: 32px;
     height: 32px;
     border-radius: 16px;
@@ -449,6 +443,44 @@ section.matheus {
     color: white;
     background-color: #576975;
 }
+
+/* Slick Slider - INÍCIO */
+
+.slick-slide:focus {
+    outline: none;
+}
+
+.slick-dotted ul {
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+}
+
+.slick-dotted li {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.slick-dotted button:focus {
+    outline: 0;
+}
+
+.slick-dotted li button {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #d8d8d8;
+    border-width: 0;
+    background: #d8d8d8; 
+    cursor: pointer;
+}
+
+li.slick-active button {
+    background: #688293;
+    color: #688293;
+}
+
+/* Slick Slider - FIM */
 
 @media (max-width: 810px) {
     nav.desktop {
